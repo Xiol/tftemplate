@@ -1,0 +1,15 @@
+msg: world
+alist:
+  - foo
+  - bar
+
+secgroups:
+  - name: allow_https
+    port_min: 443
+    port_max: 443
+    remote_cidr: 0.0.0.0/0
+
+  - name: allow_ftp_pasv
+    port_min: 64000
+    port_max: 64050
+    remote_cidr: 192.10.2.0/24
